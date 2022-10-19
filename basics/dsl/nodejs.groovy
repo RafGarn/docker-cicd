@@ -18,11 +18,12 @@ job('NodeJS example') {
 }
 
 job('Raf example') {
-    scm {
-        git(https://github.com/RafGarn/docker-cicd.git) {  node -> // is hudson.plugins.git.GitSCM
-            node / gitConfigName('DSL yaniv')
-            
-        
+   scm {
+        git('https://github.com/RafGarn/docker-cicd.git') {  node -> // is hudson.plugins.git.GitSCM
+            node / gitConfigName('DSL User')
+            node / gitConfigName('DSL rafa')
+            node / gitConfigEmail('jenkins-dsl@newtech.academy')
+        }
     }
     triggers {
         scm('H/5 * * * *')
