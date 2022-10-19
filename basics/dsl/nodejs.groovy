@@ -22,7 +22,7 @@ job('Raf example') {
         git(https://github.com/RafGarn/docker-cicd.git) {  node -> // is hudson.plugins.git.GitSCM
             node / gitConfigName('DSL yaniv')
             
-        }
+        
     }
     triggers {
         scm('H/5 * * * *')
