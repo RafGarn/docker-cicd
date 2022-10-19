@@ -21,7 +21,7 @@ job('Raf example') {
     scm {
         git(https://github.com/RafGarn/docker-cicd.git) {  node -> // is hudson.plugins.git.GitSCM
             node / gitConfigName('DSL yaniv')
-            node / gitConfigEmail('jenkins-dsl@newtech.academy')
+            
         }
     }
     triggers {
