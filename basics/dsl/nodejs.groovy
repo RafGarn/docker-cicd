@@ -32,7 +32,7 @@ job('Raf example') {
                          // Manage Jenkins -> Configure Tools -> NodeJS Installations -> Name
     }
     steps {
-        shell("npm install")
+        shell("docker run -t test:test .")
     }
 }
 
