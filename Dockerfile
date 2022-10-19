@@ -1,4 +1,4 @@
-FROM alpine:latest
-WORKDIR /code
-COPY ./helloworld.txt /code/helloworld.txt
-CMD cat helloworld.txt && sleep 30
+FROM openjdk:latest
+RUN echo "this is a build phase"
+RUN echo "this is a lint phase"
+
